@@ -63,3 +63,20 @@ function factorial(n) {
   }
   return result;
 }
+
+function vowelsAndConsonants(s) {
+    let vowlesArr = ["a", "e", "i", "o", "u"];
+    
+    for (let i of s){
+        if(vowlesArr.includes(i)) {
+            console.log(i)
+        }
+    }
+    
+    for (let i of s){
+        if(!vowlesArr.includes(i)){
+            console.log(i)
+        }
+    }
+    
+}
