@@ -286,3 +286,66 @@ function modifyArray(nums) {
   }) 
   return result
 }
+*****************
+    
+    function getMaxLessThanK(n, k){
+    let max = 0;
+    for(let i = 1; i <= n; i++){
+        for (let j= i +1; j <= n ; j++) {
+            if((i & j)< k)max = Math.max(max, i &j);
+        } 
+    }
+    return max
+}
+
+*****************
+
+const days = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+function getDayName(dateString) {
+    
+    let dayName;
+    // Write your code here
+    
+    let day = new Date (dateString);
+    dayName= days[day.getDay()]
+    return dayName;
+}
+
+******************
+function regexVar() {
+    /*
+     * Declare a RegExp object variable named 're'
+     * It must match a string that starts and ends with the same vowel (i.e., {a, e, i, o, u})
+     */
+    
+    let re = /^([aeiou]).*\1$/;
+    
+    /*
+     * Do not remove the return statement
+     */
+    return re;
+}
+
+*******************
+function regexVar() {
+
+  const re = /^(Mr\.|Mrs\.|Ms\.|Dr\.|Er\.)[a-zA-Z]+$/
+    /*
+     * Do not remove the return statement
+     */
+    return re;
+}
+
+******************
+function regexVar() {
+    /*
+     * Declare a RegExp object variable named 're'
+     * It must match ALL occurrences of numbers in a string.
+     */
+    const re = /[0-9]{1,}/g;
+    
+    /*
+     * Do not remove the return statement
+     */
+    return re;
+}
